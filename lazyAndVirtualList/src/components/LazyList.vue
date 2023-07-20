@@ -10,7 +10,7 @@
 
 <script setup lang="ts">
 import { ref, computed, onMounted } from "vue";
-import "./index.js";
+
 const container = ref<HTMLElement>();
 const blank = ref<HTMLElement>();
 const list = ref<any>([]);

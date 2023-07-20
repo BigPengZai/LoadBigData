@@ -1,14 +1,14 @@
 <template>
-  <!-- <LazyList /> -->
+  <LazyList />
   <!-- <VirtualList :list-data="d" :item-size="100" /> -->
-  <DynamicVirtualList
+  <!-- <DynamicVirtualList
     :list-data="d"
     :estimate-item-size="200"
     :buffer-page="1"
     v-slot="slotProps"
   >
     <Item :item="slotProps.item" />
-  </DynamicVirtualList>
+  </DynamicVirtualList> -->
 </template>
 
 <script setup lang="ts">

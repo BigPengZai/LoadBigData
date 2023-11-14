@@ -115,6 +115,7 @@ const handleScroll = ()=>{
 列表数据笃定，listData
 当前滚动的位置，scrollTop
 
+主要点：计算可见区域加载项
 
 -  列表总高度 screenHeight = listData.length*itemSize
 -  可显示的列表个数 visiableCount = Math.ceil(screenHeight/itemSize)

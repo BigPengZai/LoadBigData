@@ -112,7 +112,10 @@ const visibleData = computed(() => {
 
 // 获取索引开始位置
 const getStartIndex = (scrollTop = 0) => {
-  return binarySearch(positions.value, scrollTop);
+  // return binarySearch(positions.value, scrollTop);
+  return binarySearch(positions.value, scrollTop) !== null
+    ? binarySearch(positions.value, scrollTop)
+    : positions.value.length;
 };
 // 二分查找
 const binarySearch = (list, value) => {
